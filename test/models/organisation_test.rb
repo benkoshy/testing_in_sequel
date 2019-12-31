@@ -3,6 +3,7 @@ require 'sequel_test_case'
 
 class OrganisationTest < SequelTestCase
   def test_organisation_name
-    assert_equal(true, false)
+    organisation = Organisation.new
+    assert_equal(organisation, false)
   end
 end

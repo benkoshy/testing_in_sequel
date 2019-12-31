@@ -49,5 +49,4 @@ production:
   <<: *default
 
   database: testing_sequel_production
-  
-  #password: <%#=ENV['QUOTES_DATABASE_PASSWORD'] %>
+
