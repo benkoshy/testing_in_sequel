@@ -1,6 +1,6 @@
 require 'sequel'
 
-DB = Sequel.postgres # memory database, requires sqlite3
+DB = Sequel.postgres
 
 class SequelTestCase < Minitest::Test
   def run(*args, &block)

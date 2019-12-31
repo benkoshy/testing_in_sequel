@@ -1,10 +1,8 @@
-
-=begin
 require 'test_helper'
 
 class OrganisationsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @organisation = organisations(:one)
+    @organisation = load(:organisation__one)
   end
 
   test "should get index" do
@@ -22,6 +20,8 @@ class OrganisationsControllerTest < ActionDispatch::IntegrationTest
       post organisations_url, params: { organisation: { name: @organisation.name } }
     end
 
+    post organisations_url, params: { organisation: { name: @organisation.name } }
+
     assert_redirected_to organisation_url(Organisation.last)
   end
 
@@ -36,7 +36,7 @@ class OrganisationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update organisation" do
-    patch organisation_url(@organisation), params: { organisation: { name: @organisation.name } }
+    patch organisation_url(@organisation), params: { organisation: { name: "have you any wool? Yes sir, Yes sir!" } }
     assert_redirected_to organisation_url(@organisation)
   end
 
@@ -48,5 +48,3 @@ class OrganisationsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to organisations_url
   end
 end
-
-=end

@@ -1,11 +1,10 @@
 require 'test_helper'
 require 'sequel_test_case'
 
-require 'fixture_dependencies/test_unit/sequel'
 
-class OrganisationTest < FixtureDependencies::SequelTestCase
+class OrganisationTest < ActiveSupport::TestCase
   def test_organisation_name
-    organisation = Organisation.new
-    assert_equal(organisation, false)
+    organisation = load(:organisation__one)
+    assert_equal(organisation.name, "BadBoys")
   end
 end
