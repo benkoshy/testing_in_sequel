@@ -42,6 +42,7 @@ class ActiveSupport::TestCase
     Sequel::Model.db.transaction(:rollback=>:always){super}
   end
 end
+
 ```
 
 Then I created a hello world test in a file I created: `test/models/organisation_test.rb`
