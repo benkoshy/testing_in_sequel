@@ -1,4 +1,4 @@
-# Steps to reproduce
+# Explanation of how to get the app up and running:
 
 The following gives you a very basic app which shows you how to get started with using fixtures in a rails app using:
 
@@ -6,7 +6,7 @@ The following gives you a very basic app which shows you how to get started with
 (ii) Minitest (not minitest spec )
 (iii) Rails
 
-* I have used the sequest_rails gem to get started. Follow the instructions contained in that gem's Readme.
+* I have used the sequel_rails gem to get started. Follow the instructions contained in that gem's Readme.
 * I have created a `test/sequel_test_case.rb` file which contains:
 
 ```ruby
@@ -42,6 +42,7 @@ class ActiveSupport::TestCase
     Sequel::Model.db.transaction(:rollback=>:always){super}
   end
 end
+
 ```
 
 Then I created a hello world test in a file I created: `test/models/organisation_test.rb`
