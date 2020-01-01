@@ -1,4 +1,4 @@
-# Steps to reproduce
+# Explanation of how to get the app up and running:
 
 The following gives you a very basic app which shows you how to get started with using fixtures in a rails app using:
 
