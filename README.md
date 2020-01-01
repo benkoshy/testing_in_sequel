@@ -6,7 +6,7 @@ The following gives you a very basic app which shows you how to get started with
 (ii) Minitest (not minitest spec )
 (iii) Rails
 
-* I have used the sequest_rails gem to get started. Follow the instructions contained in that gem's Readme.
+* I have used the sequel_rails gem to get started. Follow the instructions contained in that gem's Readme.
 * I have created a `test/sequel_test_case.rb` file which contains:
 
 ```ruby
