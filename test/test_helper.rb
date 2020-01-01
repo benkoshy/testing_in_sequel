@@ -4,7 +4,6 @@ require 'rails/test_help'
 
 require 'fixture_dependencies/helper_methods'
 
-
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
